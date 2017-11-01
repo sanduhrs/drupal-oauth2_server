@@ -41,7 +41,7 @@ class Utility {
       'refresh_token' => [
         'name' => t('Refresh token'),
         'class' => '\OAuth2\GrantType\RefreshToken',
-        'settings callback' => [_NAMESPACE__ . '\Form\ServerForm', 'refreshTokenSettings'],
+        'settings callback' => [__NAMESPACE__ . '\Form\ServerForm', 'refreshTokenSettings'],
         'default settings' => [
           'always_issue_new_refresh_token' => FALSE,
           'unset_refresh_token_after_use' => TRUE,
